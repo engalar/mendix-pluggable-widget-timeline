@@ -1,0 +1,1 @@
+declare module '@alifd/next/lib/timeline/mobile';

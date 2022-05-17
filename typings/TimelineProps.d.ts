@@ -4,17 +4,16 @@
  * @author Mendix UI Content Team
  */
 import { CSSProperties } from "react";
-import { EditableValue, ListValue, ListAttributeValue } from "mendix";
+import { ListValue, ListAttributeValue } from "mendix";
 
 export interface TimelineContainerProps {
     name: string;
     class: string;
     style?: CSSProperties;
     tabIndex?: number;
-    sampleText: string;
-    attribute?: EditableValue<string>;
     datasource: ListValue;
-    att2?: ListAttributeValue<string>;
+    attrTitle: ListAttributeValue<string>;
+    attrContent: ListAttributeValue<string>;
 }
 
 export interface TimelinePreviewProps {
@@ -22,8 +21,7 @@ export interface TimelinePreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    sampleText: string;
-    attribute: string;
     datasource: {} | { type: string } | null;
-    att2: string;
+    attrTitle: string;
+    attrContent: string;
 }
